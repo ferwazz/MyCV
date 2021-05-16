@@ -20,6 +20,8 @@
 \usepackage{tabularx}
 \usepackage{fontawesome5}
 \usepackage{multicol}
+\usepackage{natbib}
+%\usepackage[sorting=ydnt]{biblatex}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
@@ -178,9 +180,44 @@
   \resumeSubHeadingListEnd
 \vspace{-16pt}
 
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, SQL, JavaScript} \\
+     \textbf{Packages}{: pandas, scipy, scikit-learn, tensorflow, pymc3, pytorch, D3, Chartjs} \\
+     \textbf{Developer Tools}{: VS Code, Jupyter, Azure, Tableau} \\
+     \textbf{Technologies/Frameworks}{: Linux, GitHub, Docker, Mutation Testing, Kanban, CI/CD} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
 %-----------PROJECTS-----------
-\section{Projects}
-    \vspace{-5pt}
+\section{Colaborations}
+    \nocite{*}
+    \begingroup
+    \renewcommand{\section}[2]{}%
+    \bibliography{CV}
+    \bibliographystyle{apalike}
+    \endgroup
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     \resumeSubHeadingListStart
       \resumeProjectHeading
           {\textbf{Gym Reservation Bot} $|$ \emph{Python, Selenium, Google Cloud Console}}{January 2021}
@@ -208,20 +245,6 @@
           \resumeItemListEnd 
     \resumeSubHeadingListEnd
 \vspace{-15pt}
-
-
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, SQL, JavaScript} \\
-     \textbf{Packages}{: pandas, scipy, scikit-learn, tensorflow, pymc3, pytorch, D3, Chartjs} \\
-     \textbf{Developer Tools}{: VS Code, Jupyter, Azure, Tableau} \\
-     \textbf{Technologies/Frameworks}{: Linux, GitHub, Docker, Mutation Testing, Kanban, CI/CD} \\
-    }}
- \end{itemize}
- \vspace{-16pt}
 
 
 %-----------INVOLVEMENT---------------

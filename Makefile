@@ -10,10 +10,12 @@ reports/CV.pdf: reports/CV.tex
 	cd reports && pdflatex CV.tex
 
 clean:
-	rm reports/*.pdf
-	rm reports/*.aux
-	rm reports/*.fdb_latexmk
-	rm reports/*.log
-	rm reports/*.fls
-	rm reports/*.out
-	rm reports/*.synctex.gz
+	rm -f reports/*.pdf
+	rm -f reports/*.aux
+	rm -f reports/*.fdb_latexmk
+	rm -f reports/*.log
+	rm -f reports/*.fls
+	rm -f reports/*.out
+	rm -f reports/*.synctex.gz
+	rm -f reports/*.bbl
+	rm -f reports/*.blg

@@ -5,6 +5,8 @@
 
 reports/CV.pdf: reports/CV.tex
 	cd reports && pdflatex CV.tex
+	cd reports && bibtex CV
+	cd reports && pdflatex CV.tex
 	cd reports && pdflatex CV.tex
 
 clean:

@@ -6,7 +6,6 @@
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
-
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -162,8 +161,8 @@
       \small Some details are confidential due to non-disclosure agreements.
       \resumeItemListStart
         \resumeItem{Work with python to implement reproducible machine learning algorithms or statistical analysis for the scientific use of data collected by the organization.}
-        \resumeItem{\href{https://github.com/IslasGECI/nerd}{\raisebox{-0.2\height}\faGithub\ \underline{NERD}}: Migrate MATLAB code to python and add mutation testing.}
-        \resumeItem{\href{https://github.com/IslasGECI/cormorant_population_growth}{\raisebox{-0.2\height}\faGithub\ \underline{Cormorant Population}}: Reprodubible scientific report, fit a population model to a bootstrapped time series data to estimate the population trend.}
+        \resumeItem{\href{https://github.com/IslasGECI/nerd}{\raisebox{-0.2\height}\faGithub\ \underline{NERD}}: Migrate MATLAB code to python, build an installable package, add mutation testing.}
+        \resumeItem{\href{https://github.com/IslasGECI/cormorant_population_growth}{\raisebox{-0.2\height}\faGithub\ \underline{Cormorant Population}}: Reprodubible scientific report, fit a population model to a bootstrapped time series data to estimate the population trend in diferent islets.}
         \resumeItem{Data driven desicision making. Measure the impact of our flora and fauna conservations actions, presenting models results using data visualizations and technical reports.}
 
       \resumeItemListEnd
@@ -193,7 +192,37 @@
  \vspace{-16pt}
 
 %-----------PROJECTS-----------
-\section{Colaborations}
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/ferwazz/stellar_occultations}{\raisebox{-0.2\height}\faGithub\ \underline{Stellar Occultations}}} $|$ \emph{Python, Numpy}}{October 2020}
+          \resumeItemListStart
+            \resumeItem{Build an installable repository in GitHub.}
+            \resumeItem{Refactoring code used to calculate diffractions patters of objects of various shapes used in \cite{castro2019occultations}.}
+            \resumeItem{Use pytest and mutmut as testing and mutations frameworks.}
+          \resumeItemListEnd
+          \vspace{-13pt} 
+      \resumeProjectHeading
+          {\textbf{\href{http://islasgeci.org:8501/}{\raisebox{-0.2\height}\faGitlab\ \underline{Kanban App}} } $|$ \emph{Javascript, Vue2, Chart.js}}{April 2021}
+          \resumeItemListStart
+            \resumeItem{Created an web dashboard using our team Kanban data, and plotted with Chart.js.}
+            \resumeItem{Use of Docker to run and publish the application.}
+            \resumeItem{Use of CI/CD in Gitlab to automate the build of Docker images.}
+            \resumeItem{Used a Cron in a Azure virtual machine to deploy the app.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{\href{https://ferwazz.github.io/d3examples/}{\raisebox{-0.2\height}\faGithub\ \underline{D3v6 Pie Chart}}} $|$ \emph{Javascript, D3.js, GitHub Pages}}{October 2020}
+          \resumeItemListStart
+            \resumeItem{Developed an Pie chart example using D3.js.}
+            \resumeItem{Use of GitHub Pages to publish the chart.}
+          \resumeItemListEnd
+      \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+
+\section{Publications}
     \nocite{*}
     \begingroup
     \renewcommand{\section}[2]{}%
@@ -201,63 +230,6 @@
     \bibliographystyle{apalike}
     \endgroup
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Gym Reservation Bot} $|$ \emph{Python, Selenium, Google Cloud Console}}{January 2021}
-          \resumeItemListStart
-            \resumeItem{Developed an automatic bot using Python and Google Cloud Console to register myself for a timeslot at my school gym.}
-            \resumeItem{Implemented Selenium to create an instance of Chrome in order to interact with the correct elements of the web page.}
-            \resumeItem{Created a Linux virtual machine to run on Google Cloud so that the program is able to run everyday from the cloud.}
-            \resumeItem{Used Cron to schedule the program to execute automatically at 11 AM every morning so a reservation is made for me.}
-          \resumeItemListEnd
-          \vspace{-13pt}
-      \resumeProjectHeading
-          {\textbf{Ticket Price Calculator App} $|$ \emph{Java, Android Studio}}{November 2020}
-          \resumeItemListStart
-            \resumeItem{Created an Android application using Java and Android Studio to calculate ticket prices for trips to museums in NYC.}
-            \resumeItem{Processed user inputted information in the back-end of the app to return a subtotal price based on the tickets selected.}
-            \resumeItem{Utilized the layout editor to create a UI for the application in order to allow different scenes to interact with each other.}
-          \resumeItemListEnd 
-          \vspace{-13pt}
-          \resumeProjectHeading
-          {\textbf{Transaction Management GUI} $|$ \emph{Java, Eclipse, JavaFX}}{October 2020}
-          \resumeItemListStart
-            \resumeItem{Designed a sample banking transaction system using Java to simulate the common functions of using a bank account.}
-            \resumeItem{Used JavaFX to create a GUI that supports actions such as creating an account, deposit, withdraw, list all acounts, etc.}
-            \resumeItem{Implemented object-oriented programming practices such as inheritance to create different account types and databases.}
-          \resumeItemListEnd 
-    \resumeSubHeadingListEnd
-\vspace{-15pt}
-
-
-%-----------INVOLVEMENT---------------
-\section{Leadership / Extracurricular}
-    \resumeSubHeadingListStart
-        \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
-            \resumeItemListStart
-                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
-                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
-                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
-            \resumeItemListEnd
-        
-    \resumeSubHeadingListEnd
 
 
 \end{document}
